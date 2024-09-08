@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 22px 0px;
+    border-bottom: 10px solid rgb(240, 238, 238);
+}
+
+.left {
+    margin-left: 50px;
+}
+
+.right {
+    margin-left: 180px;
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.right ul {
+    display: flex;
+    gap: 20px;
+}
+
+.right ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.mid ul {
+    display: flex;
+    margin-left: 220px;
+}
+
+.mid ul li {
+    list-style: none;
+    margin: 10px 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.mid ul li:hover {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    z-index: 99;
+}
+
+.subpage {
+    visibility: hidden;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 150px;
+    transition: all 0.3s;
+}
+
+.dropdown:hover .subpage{
+    visibility: visible;
+}
+.subpage ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 5px 10px;
+}
+
+.subpage ul li{
+    text-align: left;
+    text-transform: none;
+}
+button {
+    border: none;
+    background-color: white;
+    color: rgb(134, 134, 134);
+}
+
+.img-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height: 650px;
+}
+
+.img-left,
+.img-right {
+    height: 100%;
+}
+
+.img-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.img-left,
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 300px;
+    left: 10px;
+    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.img-left img,
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+hr {
+    padding: 1px;
+    border: none;
+    background-color: red;
+    width: 90px;
+}
+
+.go1 {
+    line-height: 20px;
+}
+
+.overlay-text1 {
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.I1 {
+    color: rgb(82, 82, 82);
+}
+
+.head-line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.head-line ul li {
+    list-style: none;
+    margin: 0px 20px;
+}
+
+.head-line ul {
+    display: flex;
+}
+
+.card-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 60px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 50px);
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.middle {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+}
+
+.stars i {
+    color: #FFD700;
+    font-size: 10px;
+}
+
+.lower {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 84vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url(https://themewagon.github.io/ashion/img/banner/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    height: 45vh;
+    width: 48vw;
+    padding: px;
+}
+
+.container2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.box2 {
+    width: 20%;
+    line-height: 20px;
+
+}
+
+.inner-box {
+    display: flex;
+    padding: 15px;
+    color: gray;
+}
+
+.half2 {
+    padding-left: 20px;
+}
+
+.stars2 {
+    display: flex;
+    margin-top: 10px;
+}
+
+.stars2 i {
+    color: #FFD700;
+    font-size: 8px;
+}
+
+.zero {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.price {
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.H2 {
+    margin-left: 15px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.new {
+    padding: 1px;
+    margin-top: 5px;
+    border: none;
+    background-color: red;
+    width: 70px;
+}
+
+.discount {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.dis-box {
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    width: 85%;
+}
+
+.inner-dis {
+    flex: 1;
+    position: relative;
+}
+
+.inner-dis img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.inner-dis2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.dis-box2 {
+    background-color: white;
+    border-radius: 50%;
+    height: 30vh;
+    width: 13vw;
+    margin-left: 200px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+}
+
+.dis-text {
+    position: absolute;
+    width: 25vw;
+    line-height: 30px;
+    margin-top: 35px;
+
+}
+
+.text2 {
+    color: red;
+    font-size: 40px;
+}
+
+.text {
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.text3 {
+    margin-left: 50px;
+    line-height: 50px;
+}
+
+.S1 {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.discount__text__title span {
+    display: block;
+    font-size: 16px;
+    color: #888;
+}
+
+.discount__text__title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.discount__text__title h5 {
+    font-size: 24px;
+    color: #e74c3c;
+}
+
+.discount__countdown {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.countdown__item {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.countdown__item span {
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+}
+
+.countdown__item p {
+    font-size: 14px;
+    color: #888;
+}
+
+.go2 {
+    margin-left: 230px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+}
+
+.services1 {
+    width: 90%;
+    display: flex;
+}
+
+.service-items {
+    display: flex;
+
+}
+
+.service-items i {
+    font-size: 36px;
+    margin-left: 80px;
+    color: red;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    line-height: 24px;
+
+}
+
+h6 {
+    font-size: 16px;
+    letter-spacing: 0.2px;
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.container-img {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 80px;
+}
+
+.img-box img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.footer-box p {
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    color: #888;
+}
+
+.li-box {
+    list-style: none;
+    color: #888;
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.li-box2 li {
+    color: black;
+    list-style: none;
+}
+
+.li-box2 {
+    display: flex;
+    gap: 10px;
+}
+
+.li-box li a {
+    color: #888;
+    line-height: 30px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+input {
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #888;
+    width: 100%;
+}
+
+form {
+    position: relative;
+    margin: 30px 0px;
+}
+
+.sidebutton {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: red;
+    color: white;
+    padding: 18px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.li-box2 a {
+    display: inline-block;
+    font-size: 15px;
+    color: black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: #e1e1e1;
+    text-align: center;
+    line-height: 40px;
+}
+
+.last {
+    width: 84%;
+    padding: 0.5px;
+    margin-top: 20px;
+    margin-left: 112px;
+    background-color: rgb(212, 212, 212);
+    border: none;
+}
