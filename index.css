@@ -15,6 +15,14 @@ header {
     margin-left: 50px;
 }
 
+.A1{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    background-color: white;
+    color: rgb(134, 134, 134);
+}
+
 .right {
     margin-left: 180px;
     display: flex;
