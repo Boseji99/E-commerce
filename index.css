@@ -85,11 +85,6 @@ header {
     text-align: left;
     text-transform: none;
 }
-button {
-    border: none;
-    background-color: white;
-    color: rgb(134, 134, 134);
-}
 
 .img-container {
     position: relative;
@@ -531,6 +526,19 @@ form {
     padding: 18px;
     border-radius: 30px;
     font-weight: bold;
+    border: none;
+}
+
+.in2:focus{
+    outline: none;
+    border-color: #888;
+}
+
+.in2 {
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #888;
+    width: 100%;
 }
 
 .li-box2 a {
