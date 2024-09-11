@@ -57,6 +57,10 @@ header {
     cursor: pointer;
 }
 
+.go1:hover{
+    cursor: pointer;
+}
+
 .dropdown {
     position: relative;
     z-index: 99;
